@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="598.0" prefWidth="871.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#e3e3eb" height="504.0" layoutX="26.0" layoutY="57.0"
+               stroke="BLACK" strokeType="INSIDE" width="818.0"/>
+    <VBox layoutX="546.0" layoutY="77.0" spacing="10" AnchorPane.rightAnchor="96.0" AnchorPane.topAnchor="77.0">
+        <Label fx:id="receivedMessagesLabel"/>
+    </VBox>
+    <Label layoutX="14.0" layoutY="8.0" text="MQTT Broker">
+        <font>
+            <Font name="System Bold" size="27.0"/>
+        </font>
+    </Label>
+    <Label alignment="CENTER" layoutX="546.0" layoutY="63.0" prefHeight="45.0" prefWidth="267.0"
+           text="Messages Received">
+        <font>
+            <Font name="System Bold" size="23.0"/>
+        </font>
+    </Label>
+    <Line endX="100.0" layoutX="537.0" layoutY="183.0" rotate="90.0" startX="-150.0"/>
+    <Line endX="100.0" layoutX="537.0" layoutY="434.0" rotate="90.0" startX="-150.0"/>
+    <Label fx:id="statusLabel" layoutX="50.0" layoutY="219.0" style="-fx-text-fill: red;" text="Disconnected"/>
+    <Button fx:id="publishButton" alignment="CENTER" layoutX="383.0" layoutY="449.0" prefHeight="25.0" prefWidth="97.0"
+            style="-fx-background-color: #000000;" text="Publish" textFill="WHITE"/>
+    <Button fx:id="connectButton" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="383.0" layoutY="215.0"
+            prefHeight="18.0" prefWidth="97.0" style="-fx-background-color: #000000;" text="Connect" textFill="WHITE"/>
+    <TextField fx:id="messageField" alignment="TOP_LEFT" layoutX="48.0" layoutY="278.0" prefHeight="162.0"
+               prefWidth="434.0" promptText="Type your message here"/>
+    <Label layoutX="48.0" layoutY="160.0" prefHeight="18.0" prefWidth="38.0" text="Broker:"/>
+    <TextField fx:id="brokerField" layoutX="79.0" layoutY="183.0" prefHeight="25.0" prefWidth="224.0"/>
+    <TextField fx:id="portField" layoutX="337.0" layoutY="182.0" prefHeight="25.0" prefWidth="143.0"/>
+    <Label layoutX="337.0" layoutY="161.0" text="Port:"/>
+    <ProgressBar fx:id="progressBar" layoutX="50.0" layoutY="251.0" prefHeight="18.0" prefWidth="434.0"/>
+    <Label layoutX="48.0" layoutY="97.0" prefHeight="61.0" prefWidth="434.0"
+           text="Connect to a broker MQTT, subsrcribe to the topic 'egitron_mqtt'&#10;and publish messages."/>
+    <TextArea fx:id="messagesArea" blendMode="COLOR_BURN" layoutX="561.0" layoutY="160.0"
+              nodeOrientation="LEFT_TO_RIGHT" prefHeight="240.0" prefWidth="238.0"
+              style="-fx-background-color: #e3e3eb;" wrapText="true">
+        <font>
+         <Font name="System Bold" size="12.0"/>
+        </font>
+    </TextArea>
+    <Label layoutX="48.0" layoutY="186.0" prefHeight="18.0" prefWidth="38.0" text="tcp://"/>
+    <Label fx:id="statusLabelHistoric" layoutX="561.0" layoutY="105.0" prefHeight="45.0" prefWidth="267.0"
+           wrapText="true"/>
+</AnchorPane>
