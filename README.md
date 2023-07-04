@@ -9,6 +9,6 @@ Clients connect to the MQTT broker using the MQTT protocol, establish a session,
 #
 This was a model built in Java with Scene builder, the interface is very simple and i think it doesn't need an explanation, you can test it using a free and public Broker, like the one i used in the example.
 
-![MQTT Broker 3](https://github.com/RicardoFamiliar/MQTT-Broker/assets/117604174/b38f0c73-1867-4543-9d05-d0fce527b4dc)
+![MQTT Broker 3](https://github.com/RicardoFamiliar/MQTT-Broker/assets/117604174/5af6c11e-7d35-4ee2-92b0-f192739a03d6)
 
 You can see the code or run the MQTT.jar that is listed above to test the software.
