@@ -38,7 +38,7 @@
     <Label layoutX="337.0" layoutY="161.0" text="Port:"/>
     <ProgressBar fx:id="progressBar" layoutX="50.0" layoutY="251.0" prefHeight="18.0" prefWidth="434.0"/>
     <Label layoutX="48.0" layoutY="97.0" prefHeight="61.0" prefWidth="434.0"
-           text="Connect to a broker MQTT, subsrcribe to the topic 'egitron_mqtt'&#10;and publish messages."/>
+           text="Connect to a broker MQTT, subsrcribe to any topic of your choice&#10;and publish messages."/>
     <TextArea fx:id="messagesArea" blendMode="COLOR_BURN" layoutX="561.0" layoutY="160.0"
               nodeOrientation="LEFT_TO_RIGHT" prefHeight="240.0" prefWidth="238.0"
               style="-fx-background-color: #e3e3eb;" wrapText="true">
